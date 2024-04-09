@@ -1,0 +1,34 @@
+<body>
+    <div id="root"></div>
+    <script src="https://www.unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
+    <script src="https://www.unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script type="text/babel">
+
+        // //create two react elements that are spans
+        // const helloElement = React.createElement('span', null, 'Hello')
+        // const worldElement = React.createElement('span', null, 'World')
+
+        // //create a react fragment that combines the two react elements
+        // const element = React.createElement(
+        //     React.Fragment, 
+        //     null, 
+        //     helloElement, 
+        //     ' ',
+        //     worldElement,
+        //     )
+
+        // const element = <React.Fragment>
+        //     <span>Hello</span> <span>World</span>
+        //     </React.Fragment>
+
+        const element = <>
+            <span>Hello</span> <span>World</span>
+            </>
+
+        //render element to the rootElement using the ReactDOM
+        ReactDOM.render(element, document.getElementById('root'))
+        
+        
+    </script>
+</body>
