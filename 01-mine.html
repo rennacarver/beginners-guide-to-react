@@ -1,0 +1,18 @@
+<body>
+    <div id="root"></div>
+    <script type="text/javascript">
+        
+        //create a div element and assign to variable element
+        const element = document.createElement('div')
+        //change the text content to 'Hello World'
+        element.textContent = 'Hello World!'
+        //change the class to 'container'
+        element.className = 'container'
+
+        //create a variable rootElement that contains the div with ID root
+        const rootElement = document.getElementById('root')
+
+        //append the variable called 'element' to the div with ID root
+        rootElement.appendChild(element)
+    </script>
+</body>
