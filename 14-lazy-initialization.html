@@ -13,6 +13,8 @@
         window.localStorage.setItem('name', name)
       })
 
+      //Each time the name state is updated, it is written into localStorage. But the webpage knows the state from the state variable. The webpage doesn't pull from local storage except on a page refresh when the lazy initalizer is used
+
       const handleChange = event => setName(event.target.value)
 
       return (
